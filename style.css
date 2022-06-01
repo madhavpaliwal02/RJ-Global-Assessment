@@ -1,0 +1,132 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    /* Navbar */
+    
+    .navbar {
+        position: static;
+        background-color: black;
+        display: flex;
+        max-height: 60px;
+        width: 100%;
+    }
+    
+    .sub-container ul {
+        display: flex;
+        align-items: center;
+    }
+    
+    .sub-container ul li {
+        margin: 10px;
+        padding: 0 10px;
+        list-style: none;
+    }
+    
+    .sub-container ul li a {
+        color: antiquewhite;
+        text-decoration: none;
+    }
+    
+    #left-sub-container {
+        width: 80%;
+        left: 20px;
+    }
+    
+    #right-sub-container {
+        width: 20%;
+        float: right;
+    }
+    /* Home Page */
+    
+    #home {
+        background-image: url(/BG-1.jpg);
+        height: 560px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: azure;
+    }
+    
+    .head {
+        margin: 0 45px;
+        padding: 10px 25px;
+    }
+    
+    #heading {
+        font-size: 4rem;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .content {
+        padding: 100px 0;
+    }
+    
+    .loginButton {
+        display: flex;
+        padding: 0 40px;
+    }
+    
+    .loginButton button {
+        border-radius: 10px;
+        margin: 0 20%;
+        padding: 15px;
+    }
+    
+    .loginButton button:hover {
+        text-decoration: underline;
+        background-color: grey;
+        color: white;
+    }
+    
+    #heading2 {
+        font-size: 4rem;
+        display: flex;
+        justify-content: center;
+        margin: 50px 0;
+    }
+    
+    .row {
+        padding: 0 70px;
+        margin: 25px;
+    }
+    
+    .col {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .card img {
+        margin: 5px auto;
+        justify-content: center;
+        height: 50px;
+        width: 50px;
+    }
+    
+    #loginPage img {
+        height: 470px;
+    }
+    /* Sign Up Page */
+    
+    .card-body {
+        height: 500px;
+    }
+    
+    .gradient-custom-3 {
+        /* fallback for old browsers */
+        background: #84fab0;
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5));
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5))
+    }
+    
+    .gradient-custom-4 {
+        /* fallback for old browsers */
+        background: #84fab0;
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1))
+    }

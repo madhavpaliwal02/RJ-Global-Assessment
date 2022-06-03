@@ -1,4 +1,3 @@
-// console.log('Hello ! World')
 // forms
 const login = document.querySelector('#log-in')
 const signup = document.querySelector('#sign-up')
@@ -9,10 +8,6 @@ signup.addEventListener('submit', function(e) {
     var name = document.getElementById('txt')
     var email1 = document.getElementById('email1')
     var pswd1 = document.getElementById('pswd1')
-
-    // console.log(name.value, email1.value, pswd1.value);
-
-
 
     if (email1.value === localStorage.getItem('Email') ||
         (email1.value === localStorage.getItem('Email') &&
@@ -26,9 +21,6 @@ signup.addEventListener('submit', function(e) {
         localStorage.setItem('Password', pswd1.value)
         window.location.href = '#log-in'
     }
-
-
-
 })
 
 login.addEventListener('submit', function(e) {

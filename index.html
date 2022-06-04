@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap stylesheet  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
@@ -15,190 +17,215 @@
 
 <body>
     <!-- Navbar -->
-    <section>
-        <navbar class="navbar" id="navi">
-            <div class="sub-container" id="left-sub-container">
-                <ul>
-                    <!-- <li><a href="#home"><i class=" fa-3xfa-thin fa-display-code"></i></a>
-                </li> -->
-                    <li><a href="index.html">Home</a></li>
-                    <!-- <li><a href="#about">About</a></li> -->
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-            <div class="sub-container" id="right-sub-container">
-                <ul>
-                    <li><a id="log" href="#log-in">Login</a></li>
-                    <li><a href="#sign-up">Sign up</a></li>
-                    <!-- <li><a href="#sign-up">Logout</a></li> -->
-                </ul>
-            </div>
-        </navbar>
-    </section>
-
-    <!-- Home -->
-    <section id="home">
-        <div class="head">
-            <h1 class="heading">Welcome to my website</h1>
-            <div class="content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla obcaecati, doloremque impedit cum asperiores commodi magni. Eum exercitationem sit quos perferendis porro a quaerat voluptatum quam reprehenderit ut, dolor consequatur odio! Nostrum
-                beatae aliquid neque voluptatem voluptatibus, eum fugiat, porro iure consequatur modi mollitia, distinctio natus. Optio exercitationem quis ullam?</div>
-
-            <div class="loginButton">
-                <button type="submit"><a href="#log-in">Login</a></button>
-                <button type="submit"><a href="#sign-up">Sign Up</a></button>
-            </div>
-        </div>
-    </section>
-
-    <!-- About -->
-    <section id="about">
-        <h1 class="heading">Post Page</h1>
+    <div class="container-fluid">
         <div class="row">
-            <div class="col md-4">
-                <div class="card" style="width: 18rem;">
-                    <img id="post-img" src="/java.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 id="post-tit" class="card-title">JAVA PROGRAMMING</h5>
-                        <p id="post-txt" class="card-text">Java is an object-oriented programming language that produces software for multiple platforms.</p>
-                        <a href="#" class="btn btn-primary">Read More</a>
-                    </div>
+            <navbar class="navbar" id="navi">
+                <div class="sub-container" id="left-sub-container">
+                    <ul>
+                        <!-- <li><a href="#home"><i class=" fa-3xfa-thin fa-display-code"></i></a>
+                    </li> -->
+                        <li><a href="index.html">Home</a></li>
+                        <!-- <li><a href="#about">About</a></li> -->
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
                 </div>
-                <!-- </div>
-            <div class="col md-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="/java.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">JAVA PROGRAMMING</h5>
-                        <p class="card-text">Java is an object-oriented programming language that produces software for multiple platforms.</p>
-                        <a href="#" class="btn btn-primary">Read More</a>
-                    </div>
+                <div class="sub-container" id="right-sub-container">
+                    <ul>
+                        <li><a id="log" href="#log-in">Login</a></li>
+                        <li><a href="#sign-up">Sign up</a></li>
+                        <!-- <li><a href="#sign-up">Logout</a></li> -->
+                    </ul>
                 </div>
-            </div>
-            <div class="col md-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="/java.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">JAVA PROGRAMMING</h5>
-                        <p class="card-text">Java is an object-oriented programming language that produces software for multiple platforms.</p>
-                        <a href="#" class="btn btn-primary">Read More</a>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-                <!-- <div class="row">
-            <div class="col md-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="/java.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">JAVA PROGRAMMING</h5>
-                        <p class="card-text">Java is an object-oriented programming language that produces software for multiple platforms.</p>
-                        <a href="#" class="btn btn-primary">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col md-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="/java.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">JAVA PROGRAMMING</h5>
-                        <p class="card-text">Java is an object-oriented programming language that produces software for multiple platforms.</p>
-                        <a href="#" class="btn btn-primary">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col md-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="/java.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">JAVA PROGRAMMING</h5>
-                        <p class="card-text">Java is an object-oriented programming language that produces software for multiple platforms.</p>
-                        <a href="#" class="btn btn-primary">Read More</a>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-    </section>
-
-    <section id="add-post">
-        <div class="main">
-            <h1 class="heading2">Add Post</h1>
-            <form id="add-post-form">
-                <input id="post-pic" type="file" name="pic" class="form-control" required="">
-                <input id="post-title" type="text" placeholder="Enter your title" name="title" class="form-control" required="" />
-                <textarea id="post-text" class="form-control" placeholder="Enter your content" name="content" style=" height:150px"></textarea>
-                <button>Post</button>
-            </form>
+            </navbar>
         </div>
-    </section>
-
-    <!-- Login/sign-up -->
-    <section id="myforms">
-        <div class="main">
-            <input type="checkbox" id="chk" aria-hidden="true">
-
-            <div class="signup">
-                <form id="sign-up">
-                    <label for="chk" aria-hidden="true">Sign up</label>
-                    <input id="txt" type="text" name="txt" placeholder="User name" required="">
-                    <input id="email1" type="email" name="email" placeholder="Email" required="">
-                    <input id="pswd1" type="password" name="pswd" placeholder="Password" required="">
-                    <button id="sign_up">Sign up</button>
-                </form>
-            </div>
-
-            <div class="login">
-                <form id="log-in">
-                    <label for="chk" aria-hidden="true">Login</label>
-                    <input id="email2" type="email" name="email" placeholder="Email" required="">
-                    <input id="pswd2" type="password" name="pswd" placeholder="Password" required="">
-                    <button id="log_in">Login</button>
-                </form>
-            </div>
+    
+        <!-- Home -->
+        <div class="row">
+            <section id="home">
+                <div class="head">
+                    <h1 class="heading">Welcome to my website</h1>
+                    <div class="content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla obcaecati, doloremque impedit cum asperiores commodi magni. Eum exercitationem sit quos perferendis porro a quaerat voluptatum quam reprehenderit ut, dolor consequatur odio! Nostrum
+                        beatae aliquid neque voluptatem voluptatibus, eum fugiat, porro iure consequatur modi mollitia, distinctio natus. Optio exercitationem quis ullam?</div>
+    
+                    <div class="loginButton">
+                        <button type="submit"><a href="#log-in">Login</a></button>
+                        <button type="submit"><a href="#sign-up">Sign Up</a></button>
+                    </div>
+                </div>
+            </section>
         </div>
-    </section>
 
-    <!-- Contact -->
-    <section id="contact">
-        <h1>Contact Us !!!</h1>
-        <div class="con">
-            <div class="con-left">
-                <table>
-                    <tr>
-                        <h2>This is <b>Madhav Paliwal</b></h2>
-                    </tr>
-                    <tr>
-                        <td>Email : </td>
-                        <td>madhavpaliwal02@gmail.com</td>
-                    </tr>
-                    <tr>
-                        <td>Contact : </td>
-                        <td>+91 88895 66618</td>
-                    </tr>
-                    <tr>
-                        <td>Address : </td>
-                        <td>Satya Narayan Gali, Agar Malwa, Dist-Agar, MP, 465441</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="con-right">
-                <img src="/my.jpg" alt="Contact">
-            </div>
+        <!-- About -->
+        <div class="row">
+            <section id="about">
+                <h1 class="heading">Post Page</h1>
+                <div class="row">
+                    <div class="col md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img id="post-img" src="/java.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 id="post-tit" class="card-title">JAVA PROGRAMMING</h5>
+                                <p id="post-txt" class="card-text">Java is an object-oriented programming language that produces software for multiple platforms.</p>
+                                <a href="#" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                        <!-- </div>
+                    <div class="col md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="/java.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">JAVA PROGRAMMING</h5>
+                                <p class="card-text">Java is an object-oriented programming language that produces software for multiple platforms.</p>
+                                <a href="#" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="/java.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">JAVA PROGRAMMING</h5>
+                                <p class="card-text">Java is an object-oriented programming language that produces software for multiple platforms.</p>
+                                <a href="#" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                        <!-- <div class="row">
+                    <div class="col md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="/java.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">JAVA PROGRAMMING</h5>
+                                <p class="card-text">Java is an object-oriented programming language that produces software for multiple platforms.</p>
+                                <a href="#" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="/java.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">JAVA PROGRAMMING</h5>
+                                <p class="card-text">Java is an object-oriented programming language that produces software for multiple platforms.</p>
+                                <a href="#" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="/java.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">JAVA PROGRAMMING</h5>
+                                <p class="card-text">Java is an object-oriented programming language that produces software for multiple platforms.</p>
+                                <a href="#" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </section>
         </div>
-    </section>
 
-    <div id="divider"></div>
+        <div class="row">
+            <section id="add-post">
+                <div class="main">
+                    <h1 class="heading2">Add Post</h1>
+                    <form id="add-post-form">
+                        <input id="post-pic" type="file" name="pic" class="form-control" required="">
+                        <input id="post-title" type="text" placeholder="Enter your title" name="title" class="form-control" required="" />
+                        <textarea id="post-text" class="form-control" placeholder="Enter your content" name="content" style=" height:150px"></textarea>
+                        <button>Post</button>
+                    </form>
+                </div>
+            </section>
+        </div>
 
-    <footer id="footer">
-        <ul id="foot">
-            <li><a href="https://www.instagram.com/?hl=en"><i class="fa-2x fa-brands fa-instagram"></i></a></li>
-            <li><a href="https://www.facebook.com/"><i class="fa-2x fa-brands fa-facebook"></i></a></li>
-            <li><a href="https://in.linkedin.com/"><i class="fa-2x fa-brands fa-linkedin"></i></a></li>
-            <li><a href="https://twitter.com/?lang=en"><i class="fa-2x fa-brands fa-twitter"></i></a></li>
-            <li><a href="https://www.whatsapp.com/"><i class="fa-2x fa-brands fa-whatsapp"></i></a></li>
-        </ul>
-        <div id="copyright">ISO copyright 9001:2008 - All Rights Reserved</div>
-    </footer>
+        <!-- Login/sign-up -->
+        <div class="row">
+            <section id="myforms">
+                <div class="main">
+                    <input type="checkbox" id="chk" aria-hidden="true">
+    
+                    <div class="signup">
+                        <form id="sign-up">
+                            <label for="chk" aria-hidden="true">Sign up</label>
+                            <input id="txt" type="text" name="txt" placeholder="User name" required="">
+                            <input id="email1" type="email" name="email" placeholder="Email" required="">
+                            <input id="pswd1" type="password" name="pswd" placeholder="Password" required="">
+                            <button id="sign_up">Sign up</button>
+                        </form>
+                    </div>
+    
+                    <div class="login">
+                        <form id="log-in">
+                            <label for="chk" aria-hidden="true">Login</label>
+                            <input id="email2" type="email" name="email" placeholder="Email" required="">
+                            <input id="pswd2" type="password" name="pswd" placeholder="Password" required="">
+                            <button id="log_in">Login</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
 
+        <!-- Contact -->
+        <div class="row">
+            <section id="contact">
+                <h1>Contact Us !!!</h1>
+                <div class="con">
+                    <div class="con-left">
+                        <table>
+                            <tr>
+                                <h2>This is <b>Madhav Paliwal</b></h2>
+                            </tr>
+                            <tr>
+                                <td>Email : </td>
+                                <td>madhavpaliwal02@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td>Contact : </td>
+                                <td>+91 88895 66618</td>
+                            </tr>
+                            <tr>
+                                <td>Address : </td>
+                                <td>Satya Narayan Gali, Agar Malwa, Dist-Agar, MP, 465441</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="con-right">
+                        <img src="/my.jpg" alt="Contact">
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="row">
+            <div id="divider"></div>
+        </div>
+
+        <div class="row">
+            <footer id="footer">
+                <ul id="foot">
+                    <li><a href="https://www.instagram.com/?hl=en"><i class="fa-2x fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/"><i class="fa-2x fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://in.linkedin.com/"><i class="fa-2x fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://twitter.com/?lang=en"><i class="fa-2x fa-brands fa-twitter"></i></a></li>
+                    <li><a href="https://www.whatsapp.com/"><i class="fa-2x fa-brands fa-whatsapp"></i></a></li>
+                </ul>
+                <div id="copyright">ISO copyright 9001:2008 - All Rights Reserved</div>
+            </footer>
+        </div>
+
+    </div>
+
+    
+
+    <!-- JS/jQuery files  -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/d9ee1fb5f9.js" crossorigin="anonymous"></script>
 </body>

@@ -11,7 +11,7 @@ body {
 #divider {
     background-color: white;
     height: 0.05rem;
-    width: 70%;
+    width: 85%;
     margin: 0 auto;
     text-align: center;
 }
@@ -27,6 +27,7 @@ body {
     width: 100%;
     font-family: var(--bs-font-sans-serif);
     z-index: 10;
+    flex-wrap: nowrap;
 }
 
 .sub-container ul {
@@ -48,13 +49,13 @@ body {
     border-radius: 10px;
 }
 
-#left-sub-container {
+/* #left-sub-container {
     width: 80%;
     left: 20px;
-}
+} */
 
 #right-sub-container {
-    width: 20%;
+    /* width: 20%; */
     float: right;
 }
 
@@ -63,7 +64,8 @@ body {
 
 #home {
     /* background-image: url(/BG-1.jpg); */
-    height: 560px;
+    /* height: 560px; */
+    margin: 50px auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -80,6 +82,7 @@ body {
     display: flex;
     justify-content: center;
     color: white;
+    margin: 20px auto;
 }
 
 .heading2 {
@@ -90,17 +93,22 @@ body {
 }
 
 .content {
-    padding: 100px 170px;
+    /* padding: 100px 170px; */
+    padding: 50px;
+    margin: 20px auto;
 }
 
 .loginButton {
     display: flex;
-    padding: 0 40px;
+    justify-content: center;
+    /* padding: 0 40px; */
 }
 
 .loginButton button {
+    width: auto;
+    padding: 10px;
     border-radius: 10px;
-    margin: 0 20%;
+    margin: 0 10px;
     background: #eee;
 }
 
@@ -126,7 +134,7 @@ body {
     margin: 2rem 0;
 }
 
-.row {
+/* .row {
     padding: 0 6rem;
     margin: 4rem 0;
 }
@@ -134,7 +142,7 @@ body {
 .col {
     display: flex;
     justify-content: center;
-}
+} */
 
 .card>img {
     margin: 5px auto;
@@ -145,6 +153,10 @@ body {
 
 
 /* login-Sign Up Page */
+
+#myforms {
+    margin: auto;
+}
 
 .main {
     width: 350px;
@@ -241,7 +253,8 @@ button:hover {
 
 #contact {
     color: white;
-    margin: 8rem 0;
+    padding: 20px;
+    margin: 8rem auto;
 }
 
 #contact h1 {
@@ -282,6 +295,7 @@ table {
 
 #footer {
     margin-bottom: 1rem;
+    width: 100%;
 }
 
 #copyright {
@@ -292,7 +306,7 @@ table {
 #foot {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     margin: 1rem 0;
 }
 
@@ -315,12 +329,12 @@ table {
 /* Add Post  */
 
 #add-post {
-    margin: 6rem 0;
+    margin: 6rem auto;
 }
 
 #add-post .main {
-    width: 50%;
-    margin: 3rem auto;
+    /* width: 50%; */
+    margin: 1rem auto;
     padding: 2rem 3rem;
 }
 
@@ -330,7 +344,7 @@ table {
 
 @media screen and (max-width: 600px) {
     /* Navigation */
-    .sub-container {
+    /* .sub-container {
         display: block;
     }
     #left-sub-container {
@@ -340,9 +354,23 @@ table {
     #right-sub-container {
         width: 10%;
         float: left;
-    }
+    } */
     /* Home */
     /* About */
     /* Contact */
     /* Login-Signup */
+}
+
+@media screen and (max-width: 768px) {
+    #foot {
+        justify-content: initial;
+    }
+
+    #divider {
+        width: 100%;
+    }
+
+    .content {
+        padding: 0;
+    }
 }

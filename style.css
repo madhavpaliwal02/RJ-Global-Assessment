@@ -270,7 +270,7 @@ button:hover {
 .con-left {
     margin: 30px auto;
     text-align: center;
-    width: 70%;
+    /* width: 70%; */
 }
 
 table {
@@ -278,14 +278,15 @@ table {
     text-align: justify;
 }
 
-.con-right {
+/* .con-right {
     width: 30%;
-}
+} */
 
 .con-right img {
     border: 2px solid whitesmoke;
     height: 14rem;
     width: 14rem;
+    max-width: 100%;
     border-radius: 150px;
     border-style: dashed;
 }

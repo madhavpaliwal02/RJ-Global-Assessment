@@ -5,6 +5,15 @@
 
 body {
     background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+    font-family: 'Rubik', sans-serif;
+}
+
+#divider {
+    background-color: white;
+    height: 0.05rem;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 
@@ -13,7 +22,6 @@ body {
 .navbar {
     position: fixed;
     background: none;
-    /* background-color: black; */
     display: flex;
     max-height: 60px;
     width: 100%;
@@ -36,6 +44,8 @@ body {
     color: antiquewhite;
     text-decoration: none;
     font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 10px;
 }
 
 #left-sub-container {
@@ -72,8 +82,15 @@ body {
     color: white;
 }
 
+.heading2 {
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
 .content {
-    padding: 100px 0;
+    padding: 100px 170px;
 }
 
 .loginButton {
@@ -92,7 +109,8 @@ body {
     text-decoration: none;
 }
 
-.loginButton button:hover {
+.loginButton button:hover,
+.sub-container ul li a:hover {
     text-decoration: underline;
     background-color: grey;
     color: white;
@@ -103,15 +121,14 @@ body {
 
 #about {
     display: none;
-    /* margin-top: 5px; */
-    background-image: url(/BG-2.jpg);
     width: 100%;
     height: 100%;
+    margin: 2rem 0;
 }
 
 .row {
-    padding: 0 70px;
-    margin: 25px;
+    padding: 0 6rem;
+    margin: 4rem 0;
 }
 
 .col {
@@ -127,41 +144,11 @@ body {
 }
 
 
-/* login Page */
-
-#loginPage {
-    background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
-    border-radius: 10px;
-    box-shadow: 5px 20px 50px #000;
-    color: antiquewhite;
-}
-
-#loginPage img {
-    height: 470px;
-}
-
-
-/* Sign Up Page */
-
-
-/* #myforms {
-    
-    padding: 20px 0;
-} */
-
-.navbar a {
-    font-family: var(--bs-font-sans-serif);
-}
-
-.sub-container ul {
-    /* margin: 10px 0px; */
-    font-family: var(--bs-font-sans-serif);
-}
+/* login-Sign Up Page */
 
 .main {
     width: 350px;
     height: 500px;
-    background: red;
     overflow: hidden;
     background: url("https://doc-08-2c-docs.googleusercontent.com/docs/securesc/68c90smiglihng9534mvqmq1946dmis5/fo0picsp1nhiucmc0l25s29respgpr4j/1631524275000/03522360960922298374/03522360960922298374/1Sx0jhdpEpnNIydS4rnN4kHSJtU1EyWka?e=view&authuser=0&nonce=gcrocepgbb17m&user=03522360960922298374&hash=tfhgbs86ka6divo3llbvp93mg4csvb38") no-repeat center/ cover;
     border-radius: 10px;
@@ -192,12 +179,11 @@ label {
 
 input {
     width: 60%;
-    height: 20px;
     background: #e0dede;
     justify-content: center;
     display: flex;
     margin: 20px auto;
-    padding: 0 10px;
+    padding: 4px 10px;
     border: none;
     outline: none;
     border-radius: 5px;
@@ -255,7 +241,7 @@ button:hover {
 
 #contact {
     color: white;
-    margin-top: 8rem;
+    margin: 8rem 0;
 }
 
 #contact h1 {
@@ -289,4 +275,74 @@ table {
     width: 14rem;
     border-radius: 150px;
     border-style: dashed;
+}
+
+
+/* footer */
+
+#footer {
+    margin-bottom: 1rem;
+}
+
+#copyright {
+    text-align: center;
+    color: #fff;
+}
+
+#foot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+#foot li {
+    list-style: none;
+    margin: 1rem 2rem;
+}
+
+#foot li a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
+#foot li a:hover {
+    color: #0f0c29;
+}
+
+
+/* Add Post  */
+
+#add-post {
+    margin: 6rem 0;
+}
+
+#add-post .main {
+    width: 50%;
+    margin: 3rem auto;
+    padding: 2rem 3rem;
+}
+
+#add-post-form {
+    margin: 0.75rem auto;
+}
+
+@media screen and (max-width: 600px) {
+    /* Navigation */
+    .sub-container {
+        display: block;
+    }
+    #left-sub-container {
+        width: 10%;
+        float: left;
+    }
+    #right-sub-container {
+        width: 10%;
+        float: left;
+    }
+    /* Home */
+    /* About */
+    /* Contact */
+    /* Login-Signup */
 }

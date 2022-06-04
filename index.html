@@ -7,30 +7,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <!-- Navbar -->
-    <div class="navbar" id="navi">
-        <div class="sub-container" id="left-sub-container">
-            <ul>
-                <li>
-                    <a href="#home"></a>
-                </li>
-                <li><a href="index.html">Home</a></li>
-                <!-- <li><a href="#about">About</a></li> -->
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-        <div class="sub-container" id="right-sub-container">
-            <ul>
-                <li><a id="log" href="#log-in">Login</a></li>
-                <li><a href="#sign-up">Sign up</a></li>
-                <!-- <li><a href="#sign-up">Logout</a></li> -->
-            </ul>
-        </div>
-    </div>
+    <section>
+        <navbar class="navbar" id="navi">
+            <div class="sub-container" id="left-sub-container">
+                <ul>
+                    <!-- <li><a href="#home"><i class=" fa-3xfa-thin fa-display-code"></i></a>
+                </li> -->
+                    <li><a href="index.html">Home</a></li>
+                    <!-- <li><a href="#about">About</a></li> -->
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="sub-container" id="right-sub-container">
+                <ul>
+                    <li><a id="log" href="#log-in">Login</a></li>
+                    <li><a href="#sign-up">Sign up</a></li>
+                    <!-- <li><a href="#sign-up">Logout</a></li> -->
+                </ul>
+            </div>
+        </navbar>
+    </section>
 
     <!-- Home -->
     <section id="home">
@@ -40,7 +44,7 @@
                 beatae aliquid neque voluptatem voluptatibus, eum fugiat, porro iure consequatur modi mollitia, distinctio natus. Optio exercitationem quis ullam?</div>
 
             <div class="loginButton">
-                <button type="submit"><a href="#log-in">Sign In</a></button>
+                <button type="submit"><a href="#log-in">Login</a></button>
                 <button type="submit"><a href="#sign-up">Sign Up</a></button>
             </div>
         </div>
@@ -52,14 +56,14 @@
         <div class="row">
             <div class="col md-4">
                 <div class="card" style="width: 18rem;">
-                    <img src="/java.png" class="card-img-top" alt="...">
+                    <img id="post-img" src="/java.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">JAVA PROGRAMMING</h5>
-                        <p class="card-text">Java is an object-oriented programming language that produces software for multiple platforms.</p>
+                        <h5 id="post-tit" class="card-title">JAVA PROGRAMMING</h5>
+                        <p id="post-txt" class="card-text">Java is an object-oriented programming language that produces software for multiple platforms.</p>
                         <a href="#" class="btn btn-primary">Read More</a>
                     </div>
                 </div>
-            </div>
+                <!-- </div>
             <div class="col md-4">
                 <div class="card" style="width: 18rem;">
                     <img src="/java.png" class="card-img-top" alt="...">
@@ -80,8 +84,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
+        </div> -->
+                <!-- <div class="row">
             <div class="col md-4">
                 <div class="card" style="width: 18rem;">
                     <img src="/java.png" class="card-img-top" alt="...">
@@ -112,11 +116,23 @@
                     </div>
                 </div>
             </div>
+        </div> -->
+    </section>
+
+    <section id="add-post">
+        <div class="main">
+            <h1 class="heading2">Add Post</h1>
+            <form id="add-post-form">
+                <input id="post-pic" type="file" name="pic" class="form-control" required="">
+                <input id="post-title" type="text" placeholder="Enter your title" name="title" class="form-control" required="" />
+                <textarea id="post-text" class="form-control" placeholder="Enter your content" name="content" style=" height:150px"></textarea>
+                <button>Post</button>
+            </form>
         </div>
     </section>
 
     <!-- Login/sign-up -->
-    <div id="myforms">
+    <section id="myforms">
         <div class="main">
             <input type="checkbox" id="chk" aria-hidden="true">
 
@@ -139,15 +155,17 @@
                 </form>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Contact -->
     <section id="contact">
-        <h1>Contact Me !!!</h1>
+        <h1>Contact Us !!!</h1>
         <div class="con">
             <div class="con-left">
-                <h2>This is <b>Madhav Paliwal</b></h2>
                 <table>
+                    <tr>
+                        <h2>This is <b>Madhav Paliwal</b></h2>
+                    </tr>
                     <tr>
                         <td>Email : </td>
                         <td>madhavpaliwal02@gmail.com</td>
@@ -168,7 +186,21 @@
         </div>
     </section>
 
+    <div id="divider"></div>
+
+    <footer id="footer">
+        <ul id="foot">
+            <li><a href="https://www.instagram.com/?hl=en"><i class="fa-2x fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.facebook.com/"><i class="fa-2x fa-brands fa-facebook"></i></a></li>
+            <li><a href="https://in.linkedin.com/"><i class="fa-2x fa-brands fa-linkedin"></i></a></li>
+            <li><a href="https://twitter.com/?lang=en"><i class="fa-2x fa-brands fa-twitter"></i></a></li>
+            <li><a href="https://www.whatsapp.com/"><i class="fa-2x fa-brands fa-whatsapp"></i></a></li>
+        </ul>
+        <div id="copyright">ISO copyright 9001:2008 - All Rights Reserved</div>
+    </footer>
+
     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/d9ee1fb5f9.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

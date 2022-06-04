@@ -1,7 +1,10 @@
 // forms
 const login = document.querySelector('#log-in')
 const signup = document.querySelector('#sign-up')
+const addpost = document.querySelector('#add-post-form')
 
+
+// signup function
 signup.addEventListener('submit', function(e) {
     e.preventDefault();
 
@@ -23,6 +26,7 @@ signup.addEventListener('submit', function(e) {
     }
 })
 
+// login function
 login.addEventListener('submit', function(e) {
     e.preventDefault();
 
@@ -33,12 +37,12 @@ login.addEventListener('submit', function(e) {
     var psls = localStorage.getItem('Password')
 
     if (email2.value === emls && pswd2.value === psls) {
-        // Home page
+        // Home page - modification
         document.querySelector('#home').style.display = "none";
         document.querySelector('#myforms').style.display = "none";
         document.querySelector('#about').style.display = "block";
 
-        // Navigation bar
+        // Navigation bar - modification
         document.querySelector('#navi').style.position = "sticky";
         var right = document.querySelector('#right-sub-container');
         right.querySelector('#log').innerHTML = 'Logout';
@@ -46,9 +50,37 @@ login.addEventListener('submit', function(e) {
             window.location.href = 'index.html';
         })
 
+        // Fetching post from local storage
+        const row = document.querySelector('#about')
+        let img = row.getElementById('post-img')
+        img.src = localStorage.getItem('Pic')
+            // row.getElementById('post-tit').innerHTML = localStorage.getItem('Title')
+            // row.getElementById('post-txt').innerHTML = localStorage.getItem('Text')
+        document.getElementById('post-tit').innerHTML = ""
+        document.getElementById('post-txt').innerHTML = ""
+
     } else {
         alert('Invalid username or password...');
         email2.innerHTML = "";
         pswd2.innerHTML = "";
+    }
+})
+
+// add post fucntion
+addpost.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    var pic = document.getElementById('post-pic').value
+    var title = document.getElementById('post-title').value
+    var text = document.getElementById('post-text').value
+
+    if (pic === "" && title === "" && text === "") {
+        addpost.reset()
+        alert('Please fill all the fields')
+    } else {
+        localStorage.setItem('Pic', pic)
+        localStorage.setItem('Title', title)
+        localStorage.setItem('Text', text)
+        addpost.reset()
     }
 })
